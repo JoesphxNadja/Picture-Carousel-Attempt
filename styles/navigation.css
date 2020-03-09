@@ -22,7 +22,14 @@ body {
 
 h1 {
     padding-top: 220px;
-    padding-left: 200px;
+    padding-left: 230px;
+    font-size: 2.4em;
+}
+
+h2 {
+    padding-top: 220px;
+    padding-left: 150px; 
+    font-size: 2.5em;
 }
 
 .nav-link-wrapper {
@@ -32,9 +39,8 @@ h1 {
 }
 
 .nav-link-wrapper > .nav-links {
-    padding: 75px 150px;
+    padding: 30px 150px;
     font-size: 1.70em;
-    font-weight: bold;
     width: 200px;
     text-align: center;
 }
