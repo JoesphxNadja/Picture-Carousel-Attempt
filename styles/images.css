@@ -21,8 +21,8 @@
 }
 
 .image-wrapper {
-    width: 3600px;
-    height: 800px;
+    height: 655px;
+    width: 100%;
     margin: 0px 0px 0px -2400px;
     position: relative;
     -webkit-animation-name: slide_animation;
@@ -31,4 +31,11 @@
     -webkit-animation-direction: alternate;
     -webkit-animation-play-state: running;
 
+}
+
+.img-container {
+    height: 655px;
+    width: 100%;
+    position: relative;
+    float: left;
 }
