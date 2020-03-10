@@ -1,41 +1,78 @@
+/* With Animations */
+
 .slider-container {
+    display: flex;
     overflow: hidden;
-    height: 655px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1250px;
 }
 
 @-webkit-keyframes slide_animation {
-    0% {left: 0px;}
-    10% {left: 0px;}
-    20% {left: 1200px;}
-    30% {left: 1200px;}
-    40% {left: 2400px;}
-    50% {left: 2400px;}
-    60% {left: 1200px;}
-    70% {left: 1200px;}
-    80% {left: 0px;}
-    90% {left: 0px;}
-    100% {left: 0px;}
+    0% {right: 0px;}
+    20% {right: 0px;}
+    40% {right: 1250px;}
+    60% {right: 1250px;}
+    80% {right: 1250px;}
+    90% {right: 0px;}
+    100% {right: 0px;}
+    /* 60% {right: 2350px;}
+    70% {right: 2350px;}
+    80% {right: 0px;}
+    90% {right: 0px;}
+    100% {right: 0px;} */
 }
 
 .image-wrapper {
-    height: 655px;
-    width: 100%;
-    margin: 0px 0px 0px -2400px;
+    display: flex;
     position: relative;
-    -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 10s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-animation-play-state: running;
+    animation-name: slide_animation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running; 
+}
 
+.img-container img {
+    width: 1250px;
+    height: 600px;
+    float: left;
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* With  No Animations*/
+
+/* @keyframes slide {
+    0% { left: 0px}
+    10% { left: 0px}
+    20% { left: 900px}
+    30% { left: 900px}
+    40% { left: 1800px}
+    50% { left: 1800px}
+    60% { left: 1800px}
+    70% { left: 900px}
+    80% { left: 900px}
+    90% { left: 0px}
+    100% { left: 0px}
+}
+
+.image-wrapper {
+    overflow: hidden;
+    width: 900px;
+    height: 400px;
 }
 
 .img-container {
-    height: 655px;
-    width: 100%;
     position: relative;
-    float: left;
+    width: 500%;
+    animation: slide 30s infinite;
+    animation-delay: 5s;
+    animation-timing-function: linear;
 }
+
+.img-container img {
+    float: left;
+    width: 900px;
+} */
