@@ -93,12 +93,14 @@ h1 {
 
 .nav-links a {
     align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: white;
     transition: 0.5s;
     cursor: pointer;
     text-align: center;
     outline: none;
+    font-size: 20px;
 }
 
 a:hover {
